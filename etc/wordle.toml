@@ -1,0 +1,5 @@
+[DATABASES]
+PRIMARY_GAME_URL = 'sqlite+aiosqlite:///var/primary/mount/games.db'
+SECONDARY_GAME_URL = 'sqlite+aiosqlite:///var/secondary/mount/games.db'
+TERTIARY_GAME_URL = 'sqlite+aiosqlite:///var/tertiary/mount/games.db'
+USER_URL = 'sqlite+aiosqlite:///var/user.db'

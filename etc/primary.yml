@@ -1,0 +1,9 @@
+mount-dir: "./var/primary/mount"
+data-dir: "./var/primary/data"
+http: 
+    addr: ":20202"
+exec: "hypercorn game --reload --debug --bind wordle.local.gd:$PORT --access-logfile - --error-logfile - --log-level DEBUG"
+static:
+       primary: true
+       hostname: "http://tuffix-vm"
+       advertise-url: "http://tuffix-vm:20202"
